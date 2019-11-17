@@ -1,7 +1,7 @@
 from peewee import *
 from playhouse.db_url import connect
 
-DATABASE = 'postgresql://root:example@localhost:5432/dogs'
+DATABASE = 'postgresql://root:example@db:5432/dogs'
 database = connect(DATABASE)
 
 
