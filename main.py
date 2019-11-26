@@ -1,7 +1,7 @@
 from sanic import Sanic
 
-from library.database import create_tables
-from library.views.dogs import (
+from dogs.models import create_tables
+from dogs.views.dogs import (
     show_root_message,
     get_dogs,
     get_dog,
@@ -10,7 +10,7 @@ from library.views.dogs import (
     update_dog,
     delete_dog
 )
-from library.views.breeds import (
+from dogs.views.breeds import (
     get_breeds,
     get_breed,
     create_breed,

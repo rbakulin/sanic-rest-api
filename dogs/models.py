@@ -1,13 +1,5 @@
-from peewee import *
-from playhouse.db_url import connect
-
-DATABASE = 'postgresql://root:example@db:5432/dogs'
-database = connect(DATABASE)
-
-
-class BaseModel(Model):
-    class Meta:
-        database = database
+from dogs.database import BaseModel, database
+from peewee import CharField, DateField, ForeignKeyField, BooleanField
 
 
 class Breed(BaseModel):

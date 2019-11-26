@@ -1,7 +1,7 @@
 from sanic.response import json
 from peewee import fn, DoesNotExist, DataError
 
-from library.database import Dog
+from dogs.models import Dog
 
 
 async def show_root_message(request):

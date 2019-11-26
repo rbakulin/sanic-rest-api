@@ -1,7 +1,7 @@
 from sanic.response import json
 from peewee import DoesNotExist
 
-from library.database import Breed
+from dogs.models import Breed
 
 
 async def get_breeds(resquest):
